@@ -1,0 +1,6 @@
+---
+- name: checkout lvcache
+  git: repo=https://github.com/gitinsky/lvcache.git dest=/root/lvcache
+
+- name: setup lvcache
+  shell: cd /root/lvcache && python setup.py install
